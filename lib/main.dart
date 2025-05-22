@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'provider/app_data.dart';
 import 'about_page.dart';
-
 void main() {
   runApp(
     ChangeNotifierProvider(
