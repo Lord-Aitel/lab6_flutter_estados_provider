@@ -17,18 +17,20 @@ class _AboutPageState extends State<AboutPage> {
     super.initState();
     final currentName = context.read<AppData>().username;
     _nameController = TextEditingController(text: currentName);
+    //print('initState');
   }
 
   @override
   void dispose() {
     _nameController.dispose();
     super.dispose();
+    //print('dispose');
   }
 
   @override
   Widget build(BuildContext context) {
     final appData = context.watch<AppData>();
-
+    //print('build');
     return Scaffold(
       appBar: AppBar(title: const Text("Detalles del Usuario")),
       body: Padding(

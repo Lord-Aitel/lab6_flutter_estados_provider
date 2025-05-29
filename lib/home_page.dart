@@ -1,37 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'provider/app_data.dart';
-import 'about_page.dart';
-//import 'Home_Page.dart';
-import 'preferences_page.dart';
-
-void main() {
-  runApp(
-    ChangeNotifierProvider(
-      create: (_) => AppData(),
-      child: const MyApp(),
-    ),
-  );
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Lab 6 - Estados y Provider',
-      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
-      home: const MyHomePage(title: ''),
-      routes: {
-    '/home': (context) => const MyHomePage(title: 'lab 7'),
-    '/about': (context) => const AboutPage(),
-    '/preferencias': (context) => const PreferenciasPage(),
-    //'/actividades': (context) => const ActividadesPage(),
-  },
-    );
-  }
-}
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -43,6 +12,7 @@ class MyHomePage extends StatefulWidget {
     return _MyHomePageState();
   }
 }
+
 class _MyHomePageState extends State<MyHomePage> {
   _MyHomePageState() {
     // Constructor
@@ -143,11 +113,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      /*floatingActionButton: FloatingActionButton(
-        onPressed: appData.incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),*///boton que ya no sirve ni se usa
     );
   }
 }
