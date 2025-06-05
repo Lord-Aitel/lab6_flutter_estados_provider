@@ -111,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             Image.network(
-              'https://cdnb.artstation.com/p/assets/images/images/046/737/355/large/adam-beardall-sav-ab-11.jpg?1645832336',
+              'https://cdna.artstation.com/p/assets/images/images/056/119/340/large/alex-figini-hakke-titan-armour-05.jpg?1668509505',
               width: 200,
               height: 200,
               fit: BoxFit.cover,
