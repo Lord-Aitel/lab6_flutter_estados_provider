@@ -64,6 +64,12 @@ class _MyHomePageState extends State<MyHomePage> {
               '${appData.counter}',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            Image.network(
+              'https://picsum.photos/250?image=10',
+              width: 250,
+              height: 250,
+              fit: BoxFit.cover,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
