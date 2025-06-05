@@ -65,11 +65,15 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             Image.network(
-              'https://picsum.photos/250?image=10',
-              width: 250,
-              height: 250,
+              'https://picsum.photos/200',
+              width: 200,
+              height: 200,
               fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) {
+                return const Text('Error al cargar imagen', style: TextStyle(color: Colors.red));
+              },
             ),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
