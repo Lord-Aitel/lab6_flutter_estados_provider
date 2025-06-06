@@ -28,9 +28,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lab 7 - Persistencia de Datos', 
+      title: 'Lab 8 - Obtención de imágenes desde internet ', 
       theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
-      home: const MyHomePage(title: 'Lab 7'), 
+      home: const MyHomePage(title: 'Lab 8'), 
       routes: {
         '/home': (context) => const MyHomePage(title: 'Lab 7'),
         '/about': (context) => const AboutPage(),
